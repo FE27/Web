@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            line-height: 28px;
+            font-size: 13px;
+            font-family: tahoma;
+        }
+        .effect-hover img{
+            transition: all 0.3s;
+            filter:grayscale(100%);
+        }
+        .effect-hover:hover img{
+            filter:grayscale(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-dark px-3 py-1">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eaque in animi molestiae? Atque blanditiis, dolorum explicabo, officia architecto eius inventore consequuntur eveniet, aspernatur quia ipsam fugit corporis odit impedit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0">
+                <div id="vms" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#vms" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#vms" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#vms" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#vms" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/slider.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slider.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slider.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slider.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#vms" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#vms" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-success mt-4 mb-0 text-center">
+                    <p>تا تاریخ <span class="fw-bold fs-6">12 دی</span> تمامی <a class="alert-link fw-normal text-decoration" href="#">محصولات</a> شامل 20 درصد تخفیف می باشد</p>
+                    <p class="mb-0">
+                        <button data-bs-toggle="modal" data-bs-target="#laitec" class="btn btn-outline-success btn-sm">اطلاعات بیشتر</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="shadow border p-0 mt-4 effect-hover">
+                    <p><img src="images/profile.png" alt="profile" class="img-fluid"></p>
+                    <div class="p-3">
+                        <h2 class="text-center">Hello World</h2>
+                        <p class="mt-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente impedit. Recusandae est tempora sint, sequi iusto sit nesciunt illum maxime nisi! Aut et porro, cumque sint debitis assumenda veniam.</p>
+                        <p class="text-end mt-4"><button class="btn btn-primary btn-sm">Read More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="shadow border p-0 mt-4 effect-hover">
+                    <p><img src="images/profile.png" alt="profile" class="img-fluid"></p>
+                    <div class="p-3">
+                        <h2 class="text-center">Hello World</h2>
+                        <p class="mt-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente impedit. Recusandae est tempora sint, sequi iusto sit nesciunt illum maxime nisi! Aut et porro, cumque sint debitis assumenda veniam.</p>
+                        <p class="text-end mt-4"><button class="btn btn-success btn-sm">Read More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="shadow border p-0 mt-4 effect-hover">
+                    <p><img src="images/profile.png" alt="profile" class="img-fluid"></p>
+                    <div class="p-3">
+                        <h2 class="text-center">Hello World</h2>
+                        <p class="mt-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente impedit. Recusandae est tempora sint, sequi iusto sit nesciunt illum maxime nisi! Aut et porro, cumque sint debitis assumenda veniam.</p>
+                        <p class="text-end mt-4"><button class="btn btn-primary btn-sm">Read More</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="modal fade" id="laitec" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">شرایط و قوانین</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque alias culpa. Odio iste dolor, accusantium officiis ab beatae, numquam quae voluptas culpa iusto similique sequi aut assumenda repudiandae explicabo?</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque alias culpa. Odio iste dolor, accusantium officiis ab beatae, numquam quae voluptas culpa iusto similique sequi aut assumenda repudiandae explicabo?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">بستن</button>
+              <button type="button" class="btn btn-primary btn-sm">قبول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
